@@ -16,9 +16,8 @@ Summary: A system for embedded scientific computing and reproducible research wi
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-opencpu-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-opencpu-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/r-opencpu-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-opencpu-feedstock)
-![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-opencpu-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-opencpu-feedstock)
 
 Current release info
 ====================

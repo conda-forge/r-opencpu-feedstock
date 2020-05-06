@@ -1,4 +1,4 @@
-{% set version = "2.1.6" %}
+{% set version = "2.1.7" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/opencpu_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/opencpu/opencpu_{{ version }}.tar.gz
-  sha256: 2571be045999ca0eab360584795efb107c51bf3fd9a3fa2aa27c4884c4296373
+  sha256: 517fb3b8c63aaff995c7640a56fab8913486c4c0c3f4e10bee811a1281425ce6
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -22,7 +22,7 @@ build:
 
 requirements:
   build:
-    - {{posix}}zip               # [win]
+    - {{ posix }}zip               # [win]
   host:
     - r-base
     - r-brew
@@ -65,14 +65,9 @@ test:
 
 about:
   home: https://www.opencpu.org (website) https://github.com/opencpu/opencpu#readme (devel)
-  license: APL 2.0
-  summary: A system for embedded scientific computing and reproducible research with R. The OpenCPU
-    server exposes a simple but powerful HTTP api for RPC and data interchange with
-    R. This provides a reliable and scalable foundation for statistical services or  building
-    R web applications. The OpenCPU server runs either as a single-user development
-    server within the interactive R session, or as a multi-user Linux stack based on
-    Apache2.  The entire system is fully open source and permissively licensed. The
-    OpenCPU website has detailed documentation and example apps.
+  license: Apache-2.0
+  summary: A system for embedded scientific computing and reproducible research with R. The OpenCPU server exposes a simple but powerful HTTP api for RPC and data interchange with R. This provides a reliable and scalable foundation for statistical services or  building R web applications. The OpenCPU server runs either as
+    a single-user development server within the interactive R session, or as a multi-user Linux stack based on Apache2.  The entire system is fully open source and permissively licensed. The OpenCPU website has detailed documentation and example apps.
   license_family: APACHE
 
 extra:

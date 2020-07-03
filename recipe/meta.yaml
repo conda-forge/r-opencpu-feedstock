@@ -1,4 +1,4 @@
-{% set version = "2.1.7" %}
+{% set version = "2.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/opencpu_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/opencpu/opencpu_{{ version }}.tar.gz
-  sha256: 517fb3b8c63aaff995c7640a56fab8913486c4c0c3f4e10bee811a1281425ce6
+  sha256: bcf522b7baf7f85127dc4448ff873314706fd1426f7f9644573bc0f975a24bc7
 
 build:
   merge_build_host: true  # [win]

@@ -3,11 +3,13 @@ About r-opencpu-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-opencpu-feedstock/blob/main/LICENSE.txt)
 
-Home: https://www.opencpu.org (website) https://github.com/opencpu/opencpu#readme (devel)
+Home: https://www.opencpu.org
 
 Package license: Apache-2.0
 
 Summary: A system for embedded scientific computing and reproducible research with R. The OpenCPU server exposes a simple but powerful HTTP api for RPC and data interchange with R. This provides a reliable and scalable foundation for statistical services or  building R web applications. The OpenCPU server runs either as a single-user development server within the interactive R session, or as a multi-user Linux stack based on Apache2.  The entire system is fully open source and permissively licensed. The OpenCPU website has detailed documentation and example apps.
+
+Development: https://github.com/opencpu/opencpu
 
 Current build status
 ====================

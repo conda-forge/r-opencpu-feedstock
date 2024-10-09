@@ -1,6 +1,5 @@
 {% set version = "2.2.14" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-opencpu
@@ -13,8 +12,7 @@ source:
   sha256: 04d033b310b2263df01e694a8d03d2cb5ea3b1b83cba71ecec96792e993b093f
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/

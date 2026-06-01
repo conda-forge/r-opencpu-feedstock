@@ -1,4 +1,4 @@
-{% set version = "2.2.14" %}
+{% set version = "2.2.15" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/opencpu_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/opencpu/opencpu_{{ version }}.tar.gz
-  sha256: 04d033b310b2263df01e694a8d03d2cb5ea3b1b83cba71ecec96792e993b093f
+  sha256: 033d438b64ad966b4c7e46a26d3e7fbc61e7a3300aa93d2fe57e98dc5c557715
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -67,8 +67,8 @@ about:
   home: https://www.opencpu.org
   dev_url: https://github.com/opencpu/opencpu
   license: Apache-2.0
-  summary: A system for embedded scientific computing and reproducible research with R. The OpenCPU server exposes a simple but powerful HTTP api for RPC and data interchange with R. This provides a reliable and scalable foundation for statistical services or  building R web applications. The OpenCPU server runs either as
-    a single-user development server within the interactive R session, or as a multi-user Linux stack based on Apache2.  The entire system is fully open source and permissively licensed. The OpenCPU website has detailed documentation and example apps.
+  summary: A system for embedded scientific computing and reproducible research with R. The OpenCPU server exposes a simple but powerful HTTP api for RPC and data interchange with R. This provides a reliable and scalable foundation for statistical services or  building R web applications. The OpenCPU server runs either
+    as a single-user development server within the interactive R session, or as a multi-user Linux stack based on Apache2.  The entire system is fully open source and permissively licensed. The OpenCPU website has detailed documentation and example apps.
   license_family: APACHE
   license_file: LICENSE
 
